@@ -18,7 +18,7 @@ def maxArea(height) -> int:
     end = len(height) - 1
 
     max_area = 0
-    for i in range(len(height)):
+    for _ in range(len(height)):
         curr_area = (end - start) * min(height[start], height[end])
         
         max_area = max(max_area, curr_area)
